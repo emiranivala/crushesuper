@@ -1,0 +1,35 @@
+{
+  "name": "Restriction Bot",
+  "description": "A bot to manage restrictions, log premium activities",
+  "repository": "https://github.com/crushe45/RestrictionBot",
+  "keywords": ["telegram", "bot", "restriction"],
+  "env": {
+    "BOT_TOKEN": {
+      "description": "The bot token from BotFather.",
+      "required": true
+    },
+    "MONGO_DB": {
+      "description": "MongoDB connection string.",
+      "required": true
+    },
+    "CHANNEL_ID": {
+      "description": "The Telegram channel ID.",
+      "required": true
+    },
+    "OWNER_ID": {
+      "description": "The Telegram user ID of the bot's owner for admin actions.",
+      "required": true
+    },
+    "PREMIUM_LOGS": {
+      "description": "Enable premium activity.",
+      "required": false,
+      "default": "false"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
+
