@@ -1,1 +1,1 @@
-worker: python -m Crushe
+worker: python -m Restriction
