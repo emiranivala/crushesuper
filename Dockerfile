@@ -19,4 +19,4 @@ COPY . .
 EXPOSE 8000
 
 # Run both the Flask app (app.py) and the Telegram bot concurrently
-CMD ["sh", "-c", "python3 app.py & python3 -m Crushe"]
+CMD ["sh", "-c", "python3 app.py & python3 -m Restriction"]
